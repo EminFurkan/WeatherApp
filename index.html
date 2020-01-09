@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js" defer></script>
+    <script src="https://kit.fontawesome.com/8360f5adb0.js" crossorigin="anonymous"defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <section id="main">
+        <div class="container">
+            <div class="search-area">
+                <input type="text" name="search" placeholder="Type in location" autocomplete="off">
+                <a><i class="fas fa-search-location"></i></a>
+                <button class="btn btn-primary">Search</button>
+            </div>
+            <div class="results">
+                <div class="weather-info">
+                    <h3 class="temprature"></h3>
+                    <div class="temprature-icon"></div>
+                </div>
+                <figure class="weather-icon">
+                    <canvas id="icon" width="64" height="64"></canvas>
+                </figure>
+            </div>
+            <div class="weather-text">
+                <ul class="data-tags">
+                    <li>max</li>
+                    <li>feels like</li>
+                    <li>min</li>
+                    <li>humidity</li>
+                    <li>pressure</li>
+                </ul>
+                <ul class="data-values">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="location-info"></div>
+        </div>
+    </section>
+</body>
+</html>
