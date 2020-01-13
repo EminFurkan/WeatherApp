@@ -9,7 +9,7 @@ searchBar.addEventListener('keyup', e => {
 })
 
 searchBtn.addEventListener('click', () => {
-    const api_key = '6baa5ff690cfbd3cc2f5d4bb63ad2f11';     // INSERT YOUR API KEY HERE
+    const api_key = 'YOUR_API_KEY';     // INSERT YOUR API KEY HERE
     const loc = searchBar.value;
     if (loc === null) return;
     
