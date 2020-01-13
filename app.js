@@ -9,14 +9,15 @@ searchBar.addEventListener('keyup', e => {
 })
 
 searchBtn.addEventListener('click', () => {
-    const api_key = 'YOUR_API_KEY';     // INSERT YOUR API KEY HERE
+    const api_key = '6baa5ff690cfbd3cc2f5d4bb63ad2f11';     // INSERT YOUR API KEY HERE
     const loc = searchBar.value;
     if (loc === null) return;
     
     let url = `http://api.openweathermap.org/data/2.5/weather?q=${loc}&APPID=${api_key}`;
     fetch(url)
     .then(res => res.json())
-    .then(data => setWeatherData(data));
+    .then(data => setWeatherData(data))
+    .catch(err => console.log(err));
 });
 
 const setWeatherData = (data) => {
@@ -67,5 +68,4 @@ tempratureUnit.addEventListener('click',() => {
     tempratureUnit.classList.toggle('celsius');
     searchBtn.click();
     searchBar.focus();
-})
-
+});
