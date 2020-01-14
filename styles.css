@@ -11,7 +11,7 @@ html, body{
 
 /* section: main */
 #main {
-    background: linear-gradient(rgba(166, 218, 248, 1), rgba(255, 255, 255, 1));
+    background: linear-gradient(rgb(4, 82, 128), rgba(255, 255, 255, 1));
     height: 100vh;
     display: flex;
     justify-content: center;
